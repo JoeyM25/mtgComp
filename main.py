@@ -210,6 +210,8 @@ if __name__ == '__main__':
     clear_button = tk.Button(window, text="DO IT", state=DISABLED, command=remove_all_cards)
     clear_button.grid(column=6, row=0)
 
+    buffer = create_label("=====Random Deck Builder=====", 0, 5)
+
     # Code for deck builder section
     build_deck_button = tk.Button(window, text="Build deck?", command=build_deck)
     build_deck_button.grid(column=0, row=6)
